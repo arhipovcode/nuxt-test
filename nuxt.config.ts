@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     buildAssetsDir: '_nuxt/',
   },
   nitro: {
-    preset: 'github-pages',
+    preset: 'static',
     // output: {
     //   dir: '../../public/local/frontend/recipe-code',
     // },
