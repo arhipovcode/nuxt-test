@@ -1,0 +1,8 @@
+@use "../variables" as *;
+
+.highcharts-page {
+    & .container,
+    &__wrapper {
+        height: 100%;
+    }
+}

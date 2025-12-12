@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/open-sans/OpenSans-Regular.woff2') format('woff2');
+    src: url('assets/fonts/open-sans/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/open-sans/OpenSans-BoldItalic.woff2') format('woff2'),
+    url('assets/fonts/open-sans/OpenSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/open-sans/OpenSans-Bold.woff2') format('woff2');
+    src: url('assets/fonts/open-sans/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

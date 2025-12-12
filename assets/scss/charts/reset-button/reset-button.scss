@@ -1,0 +1,21 @@
+@use "../../variables" as *;
+@use 'sass:color';
+
+.chart-reset-btn-arrow {
+    visibility: visible;
+
+    rect {
+        width: 40px;
+        height: 40px;
+        fill: color.adjust($primary, $lightness: 20%);
+        stroke: color.adjust($secondary, $lightness: 20%);
+
+        &:hover {
+            fill: color.adjust($primary, $lightness: 30%);
+        }
+    }
+
+    image {
+        pointer-events: none;
+    }
+}

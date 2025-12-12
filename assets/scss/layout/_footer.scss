@@ -1,0 +1,9 @@
+@use "../variables" as *;
+@use "sass:color";
+
+.footer {
+    background-color: color.adjust($bg-main, $lightness: -3%);
+    box-shadow: 0 8px 12px 2px $secondary;
+    padding: 1rem;
+    text-align: center;
+}

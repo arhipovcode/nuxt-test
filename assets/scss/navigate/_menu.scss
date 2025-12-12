@@ -1,0 +1,39 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "sass:color";
+
+.nav {
+    @include flex-center;
+
+    &__ul {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+    }
+
+    &__link {
+        position: relative;
+        font-size: 18px;
+        transition: 0.2s;
+
+        &:hover {
+            color: color.mix(blue, $text-main, 60%);
+        }
+
+        &.router-link-active {
+            color: color.mix(blue, $text-main, 80%);
+
+            &:after {
+                position: absolute;
+                content: '';
+                display: inline-block;
+                width: 110%;
+                height: 2px;
+                background-color: color.mix(blue, $text-main, 50%);
+                left: 0;
+                transform: translateX(-5%);
+                bottom: -2px;
+            }
+        }
+    }
+}

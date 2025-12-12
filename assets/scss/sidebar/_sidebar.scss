@@ -1,0 +1,76 @@
+@use "../variables" as *;
+@use "sass:color";
+
+.sidebar {
+    padding: 0.25rem;
+    max-width: 20rem;
+    max-height: calc(100vh - 138px);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    flex-shrink: 0;
+    border-left: 1px solid color.mix($dark, $light, 25%);
+    border-right: 1px solid color.mix($dark, $light, 25%);
+    background-color: $light;
+    
+    &_empty {
+        background-color: $bg-white;
+        border: none;
+    }
+
+    &__menu {
+        &-title {
+            font-size: 1rem;
+            padding: 0.75rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: color.mix(blue, $bg-main, 10%);
+
+                &::before {
+                    background-color: color.mix(blue, $bg-main, 10%);
+                }
+            }
+
+            &_select-content {
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 4px;
+                    border-radius: 4px;
+                    background-color: color.mix(blue, $bg-main, 25%);
+                }
+            }
+        }
+
+        &-list {
+            height: 0;
+            overflow: hidden;
+            padding: 0 1rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $bg-white;
+            }
+
+            &__elem {
+                display: inline-block;
+                font-size: 0.875rem;
+                padding: 0.5rem;
+
+                &_selected {
+                    color: color.mix(blue, $bg-main, 75%);
+                }
+            }
+
+            &_active {
+                height: auto;
+            }
+        }
+    }
+}

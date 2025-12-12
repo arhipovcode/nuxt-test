@@ -1,0 +1,18 @@
+@use "../variables" as *;
+@use "../mixins";
+@use "sass:color";
+
+.header {
+    background-color: color.adjust($bg-main, $lightness: -3%);
+    box-shadow: 0 -8px 20px 2px $secondary;
+    padding: 1rem;
+    text-align: center;
+
+    &__logo {
+        padding: 8px 24px;
+        box-shadow: inset 2px 2px 7px 2px color.mix(blue, $bg-main, 17%);
+        border-radius: 8px;
+        background-color: $light;
+        font-size: 20px;
+    }
+}

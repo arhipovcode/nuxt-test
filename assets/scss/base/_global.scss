@@ -1,0 +1,55 @@
+@use "../variables" as *;
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    padding: 0.15rem 0;
+}
+
+body {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    background-color: $bg-main;
+    color: $text-main;
+    font-size: 16px;
+    line-height: 1.6;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+
+a:hover,
+button:hover {
+    cursor: pointer;
+}
+
+input, textarea, button, select {
+    appearance: none;
+    background: none;
+    border-radius: 0;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+:focus-visible {
+    outline: 2px solid $secondary;
+    outline-offset: 2px;
+}
+
+pre {
+    margin: 0;
+    white-space: pre-wrap;
+}

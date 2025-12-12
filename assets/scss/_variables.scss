@@ -1,0 +1,42 @@
+// Цветовая палитра
+$primary: #108DFF;
+$secondary: #6c757d;
+$success: #28a745;
+$warning: #ffc107;
+$info: #17a2b8;
+$light: #f8f9fa;
+$dark: #343a40;
+
+$red-60: #db4f44;
+$red-90: #e53025;
+
+$bg-white: #ffffff;
+$bg-main: #F6F8FB;
+$bg-light: #DFF0EA;
+
+$text-main: #494953;
+$text-secondary: rgba(73, 73, 83, 0.8);
+
+$icon-primary: #108DFF;
+$icon-success: #28a745;
+$icon-dark: #59606D;
+
+$bx-shadow-main-bottom: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+
+// Шрифты
+$ff-arial: 'Arial', sans-serif;
+$fs-base: 16px;
+$lh-base: 1.5;
+
+// Отступы и размеры
+$spacing-unit: 8px;
+$container-width: 1200px;
+
+// Breakpoints (медиа-запросы)
+$breakpoints: (
+    "xl": 1440px,
+    "lg": 1280px,
+    "md": 1024px,
+    "sm": 768px,
+    "xs": 480px,
+);

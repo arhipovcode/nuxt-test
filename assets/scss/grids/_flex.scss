@@ -1,0 +1,27 @@
+@use "../mixins";
+
+.flex {
+    display: flex;
+
+    &_col {
+        flex-direction: column;
+    }
+
+    &_i-center {
+        align-items: center;
+    }
+
+    &_i-start {
+        align-items: flex-start;
+    }
+
+    &_jc-between {
+        justify-content: space-between;
+    }
+
+    &_jc-center {
+        justify-content: center;
+    }
+
+    @include mixins.generate-spacing-utilities(column-gap, colgap, 1, 5);
+}

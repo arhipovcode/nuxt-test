@@ -1,0 +1,11 @@
+@use "../mixins";
+
+.margin {
+    @include mixins.generate-spacing-utilities(margin-top, t, 1, 5);
+    @include mixins.generate-spacing-utilities(margin-bottom, b, 1, 5);
+}
+
+.padding {
+    @include mixins.generate-spacing-utilities(padding-top, t, 1, 5);
+    @include mixins.generate-spacing-utilities(padding-bottom, b, 1, 5);
+}

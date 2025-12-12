@@ -1,0 +1,13 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin generate-spacing-utilities($property, $modifier, $from: 1, $to: 10, $unit: rem) {
+  @for $i from $from through $to {
+    &_#{$modifier}-#{$i} {
+      #{$property}: #{$i}#{$unit};
+    }
+  }
+}

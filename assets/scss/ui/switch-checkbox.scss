@@ -1,0 +1,23 @@
+@use "../variables" as *;
+
+.switch-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+
+    &.--active & {
+        &__label {
+            border: 1px solid $primary;
+        }
+
+        &__icon {
+            background-color: $primary;
+        }
+    }
+
+    &__label {
+        border: 1px solid $dark;
+        border-radius: 4px;
+        margin-right: 8px;
+    }
+}

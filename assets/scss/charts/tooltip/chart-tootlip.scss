@@ -1,0 +1,8 @@
+@use "../../variables" as *;
+
+.my-class-tooltip {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: $light;
+    padding: 12px 16px;
+    border-radius: 8px;
+}

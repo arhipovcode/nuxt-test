@@ -1,0 +1,31 @@
+# Используем официальный Node.js образ
+image: node:20
+
+# Определяем этапы
+stages:
+  - build
+  - deploy
+
+# Этап сборки
+build:
+  stage: build
+  script:
+    - npm ci
+    - npm run generate
+    # Nuxt 3 кладёт статическую сборку сюда:
+    - mv .output/public public
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 hour
+
+# Этап деплоя на GitLab Pages
+pages:
+  stage: deploy
+  script:
+    - echo "Deploying to GitLab Pages..."
+  artifacts:
+    paths:
+      - public
+  only:
+    - master   # запустить деплой только при пуше в master
