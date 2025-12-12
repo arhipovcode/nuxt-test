@@ -1,11 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+const repoName = process.env.GITHUB_REPOSITORY?.split('/').pop()
+
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   ssr: false,
   app: {
-    // baseURL: '/recipe-code/',
-    baseURL: '/nuxt-test/',
+    // baseURL can be overridden with env NUXT_BASE, or derived from GITHUB_REPOSITORY in CI
+    baseURL: process.env.NUXT_BASE || (repoName ? `/${repoName}/` : '/'),
     buildAssetsDir: '_nuxt/',
   },
   nitro: {
