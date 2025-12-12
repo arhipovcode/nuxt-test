@@ -1,1 +1,0 @@
-const a={chart:{type:"column"},title:{text:"График тип column"},series:[{name:"2024",data:[{name:"Серия 2024",y:40,color:"#5890F8"}]},{name:"2025",data:[{name:"Серия 2025",y:30,color:"#ADB6CE"}]}]};export{a as default};
