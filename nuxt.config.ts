@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     // baseURL: '/recipe-code/',
+    baseURL: '/nuxt-test/',
     buildAssetsDir: '_nuxt/',
   },
   nitro: {
